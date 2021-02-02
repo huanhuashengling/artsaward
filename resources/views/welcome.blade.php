@@ -38,10 +38,10 @@
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="/images/teacher.png" alt="Generic placeholder image" width="140" height="140">
-            <h2>指导教师</h2>
+            <h2>指导老师</h2>
             <p>提交学校报名信息.</p>
             <p>核对参赛学生信息.</p>
-            <p><a class="btn btn-secondary" href="{{ route('subject.login') }}" role="button">点击登入 »</a></p>
+            <p><a class="btn btn-secondary" href="{{ route('instructor.login') }}" role="button">点击登入 »</a></p>
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4">
             <img class="rounded-circle" src="/images/student.png" alt="Generic placeholder image" width="140" height="140">

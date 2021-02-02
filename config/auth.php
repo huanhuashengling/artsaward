@@ -40,17 +40,13 @@ return [
             'driver' => 'session',
             'provider' => 'students',
         ],
-        'school' => [
+        'instructor' => [
             'driver' => 'session',
-            'provider' => 'schools',
+            'provider' => 'instructors',
         ],
         'subject' => [
             'driver' => 'session',
             'provider' => 'subjects',
-        ],
-        'teacher' => [
-            'driver' => 'session',
-            'provider' => 'teachers',
         ],
 
         'api' => [
@@ -82,13 +78,9 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\Student::class,
         ],
-        'teachers' => [
+        'instructors' => [
             'driver' => 'eloquent',
-            'model' => App\Models\Teacher::class,
-        ],
-        'schools' => [
-            'driver' => 'eloquent',
-            'model' => App\Models\School::class,
+            'model' => App\Models\Instructor::class,
         ],
         'subjects' => [
             'driver' => 'eloquent',
