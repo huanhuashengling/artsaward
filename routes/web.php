@@ -23,7 +23,7 @@ Route::group(['prefix' => 'subject','namespace' => 'Subject'],function ($router)
 {
     $router->get('login', 'LoginController@showLoginForm')->name('subject.login');
     $router->post('login', 'LoginController@login')->name('subject.login');
-    $router->get('logout', 'LoginController@logout');
+    $router->get('logout', 'LoginController@logout')->name('subject.logout');
 });
 
 Route::group(['middleware' => 'auth.subject:subject, subject/login', 'prefix' => 'subject','namespace' => 'Subject'],function ($router)
